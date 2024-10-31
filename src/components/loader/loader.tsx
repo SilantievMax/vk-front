@@ -6,5 +6,5 @@ import { LoaderProps } from './loader.props';
 export const Loader: FC<LoaderProps> = (props) => {
   const { className } = props;
 
-  return <LoaderCircle className={cn('animate-spin stroke-primary', className)} />;
+  return <LoaderCircle size={48} className={cn('animate-spin stroke-primary', className)} />;
 };

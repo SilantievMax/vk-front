@@ -69,7 +69,7 @@ export const PackagesList: FC<PackagesListProps> = observer((props) => {
         </TableBody>
       </Table>
 
-      {isLoading && <Loader className='fixed bottom-3 right-3' />}
+      {isLoading && <Loader className='fixed bottom-3 right-1/2' />}
     </>
   );
 });
