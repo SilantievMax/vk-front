@@ -30,8 +30,8 @@ export const PackagesList: FC<PackagesListProps> = observer((props) => {
       <Table className={className}>
         <TableHeader>
           <TableRow>
-            {columns.map((column) => (
-              <TableHead>{column.name}</TableHead>
+            {columns.map((column, index) => (
+              <TableHead key={index}>{column.name}</TableHead>
             ))}
           </TableRow>
         </TableHeader>
